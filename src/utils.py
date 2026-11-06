@@ -9,6 +9,9 @@ def generate_uid() -> str:
     parts = str(uuid.uuid4()).split("-")
     return "".join((parts[0], parts[-1]))
 
+def ask_task_id() -> str:
+    return input("Enter Task ID:")
+
 
 
 
